@@ -47,7 +47,7 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         holder.nominal.setText(Constantes.nominal + " " + (posts.get(position).get(Constantes.nominal)));
         holder.icon.setText((CharSequence) posts.get(position).get(Constantes.charCode));
         holder.oldNam.setText(Constantes.prev + " " + redoubl((posts.get(position).get(Constantes.previous))));
-        holder.tog.setText(redoubl(num / (Double) posts.get(position).get(Constantes.value) / (Double) posts.get(position).get(Constantes.nominal)));
+        holder.tog.setText(redoubl(num / (Double) posts.get(position).get(Constantes.value) * (Double) posts.get(position).get(Constantes.nominal)));
     }
 
 
